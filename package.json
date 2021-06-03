@@ -1,0 +1,22 @@
+{
+  "name": "aggregate-big-data-paginate",
+  "version": "1.0.0",
+  "description": "Aggregate big data pagination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["aggregate", "paginate"],
+  "author": "Mostafa Haghighi",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "mongoose": "^5.2.4"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
