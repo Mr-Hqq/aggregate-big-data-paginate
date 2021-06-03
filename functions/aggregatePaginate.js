@@ -40,9 +40,9 @@ async function aggregatePage(aggregate, options = { page: 1, limit: 10 }) {
 		},
 		{ $unwind: '$metadata' },
 	)
-	const shopTransactions =
+	const model =
 		(await this.aggregate(aggregate).allowDiskUse(true)) || []
-	if (shopTransactions.length < 1) {
+	if (model.length < 1) {
 		return {
 			result: {},
 			totalDocs: 0,
@@ -50,10 +50,10 @@ async function aggregatePage(aggregate, options = { page: 1, limit: 10 }) {
 			pages: [],
 		}
 	}
-	const result = shopTransactions[0].docs
-	const totalDocs = shopTransactions[0].metadata.total
+	const result = model[0].docs
+	const totalDocs = model[0].metadata.total
 	const totalPages = Math.ceil(
-		shopTransactions[0].metadata.total / options.limit,
+		model[0].metadata.total / options.limit,
 	)
 	const pages = []
 	for (let i = 0; i < totalPages + 1; i++) {

@@ -1,6 +1,6 @@
 {
   "name": "mongoose-aggregate-big-data-paginate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aggregate big data pagination",
   "main": "index.js",
   "scripts": {
