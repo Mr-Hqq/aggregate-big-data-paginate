@@ -1,4 +1,4 @@
-const aggregatePaginate = require('./aggregatePaginate')
+const aggregatePaginate = require('./functions/aggregatePaginate')
 
 /**
  * @param {Schema} schema
