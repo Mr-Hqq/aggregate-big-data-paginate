@@ -20,9 +20,9 @@ var aggregatePages = require("mongoose-aggregate-big-data-paginate");
 
 var schema = new mongoose.Schema({});
 
-mySchema.plugin(aggregatePaginate);
+schema.plugin(aggregatePages);
 
-var model = mongoose.model("Model", mySchema);
+var model = mongoose.model("Model", schema);
 ```
 
 and then use model `aggregatePage` method,
